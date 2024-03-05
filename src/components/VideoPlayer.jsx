@@ -6,7 +6,7 @@ const VideoPlayer = ({ video }) => {
   const videoRef = useRef(null);
   const controlsRef = useRef(null);
   const volumeInputRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [speed, setSpeed] = useState(1);
@@ -33,6 +33,12 @@ const VideoPlayer = ({ video }) => {
       setCurrentTime(0);
       setIsPlaying(false);
     };
+
+    video.play().then(() => {
+      setIsPlaying(true);
+    }).catch((error) => {
+      console.error('Failed to play video:', error);
+    });
 
     video.addEventListener('timeupdate', handleTimeUpdate);
     video.addEventListener('durationchange', handleDurationChange);
