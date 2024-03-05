@@ -1,0 +1,31 @@
+.ContainerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: 10px;
+}
+
+.VideoPlayerDiv {
+  width: 70vw;
+  margin: 0 10px;
+}
+
+.VideoPlayList {
+  width: 25vw;
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 850px) {
+  .ContainerDiv {
+    flex-direction: column;
+  }
+  
+  .VideoPlayerDiv {
+    width: 100%;
+  }
+  
+  .VideoPlayList {
+    width: 100%;
+    margin: 0;
+  }
+}
+
