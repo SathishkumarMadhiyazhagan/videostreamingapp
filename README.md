@@ -1,10 +1,12 @@
 # Video Streaming App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 This Project has deployed in netlify [URL](https://65e6f8172cb5b782e9639f3e--frabjous-fudge-46895a.netlify.app/)
 
+If you click that url it can open site
+
 In This Git Repo has source code of this project
+
+In this project, I have used react js to develop the project 
 
 ## Available Functions
 
